@@ -1,0 +1,28 @@
+name: Feature request
+description: Suggest an improvement for Nexus Launcher
+labels: ["enhancement", "beta"]
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: Proposed feature
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would it solve?
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+    validations:
+      required: false

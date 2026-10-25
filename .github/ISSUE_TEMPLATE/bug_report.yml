@@ -1,0 +1,63 @@
+name: Bug report
+description: Report a reproducible problem with the beta
+labels: ["bug", "beta"]
+body:
+  - type: input
+    id: launcher_version
+    attributes:
+      label: Nexus Launcher version
+      placeholder: 2.1.0-beta.1
+    validations:
+      required: true
+  - type: input
+    id: windows_version
+    attributes:
+      label: Windows edition and build
+      placeholder: Windows 11 24H2, build 26100
+    validations:
+      required: true
+  - type: input
+    id: minecraft_version
+    attributes:
+      label: Minecraft version
+    validations:
+      required: true
+  - type: input
+    id: loader
+    attributes:
+      label: Loader and version
+      placeholder: Vanilla, Fabric, Forge, NeoForge, or other
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs (optional)
+      description: Remove account names, tokens, email addresses, and private file paths before attaching logs.
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I removed personal information and credentials from attached logs.
+          required: true

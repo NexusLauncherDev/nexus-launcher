@@ -1,0 +1,16 @@
+.env
+.env.*
+*.log
+*.db
+*.sqlite
+*.sqlite3
+*.zip
+*.jar
+*.pdb
+*.dmp
+.DS_Store
+Thumbs.db
+release-assets/
+build-notices.ps1
+
+build-*.ps1
